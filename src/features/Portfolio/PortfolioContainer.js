@@ -4,7 +4,7 @@ import { projects } from "./projects";
 
 export const PortfolioContainer = () => {
   const generateProjects = () => {
-    return projects.map(project => <Project {...project} />);
+    return projects.map(project => <Project key={project.id} {...project} />);
   };
   return (
     <section className="page-section portfolio" id="portfolio">

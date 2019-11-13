@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./features/Navbar";
 import { Home } from "./features/Home";
-import './App.css';
+import "./App.css";
 import { PortfolioContainer } from "./features/Portfolio/PortfolioContainer";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
-      <PortfolioContainer />
+      <PortfolioContainer id="portfolio" />
     </div>
   );
 }

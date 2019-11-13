@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollspyNav from "react-scrollspy-nav";
 
 const Navbar1 = () => {
   return (
@@ -23,49 +24,51 @@ const Navbar1 = () => {
           <i className="fas fa-bars"></i>
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#about"
-              >
-                About
-              </a>
-            </li>
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#skills"
-              >
-                Skills
-              </a>
-            </li>
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#portfolio"
-              >
-                Portfolio
-              </a>
-            </li>
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#portfolio"
-              >
-                Blogs
-              </a>
-            </li>
+          <ScrollspyNav scrollTargetIds={["portfolio"]} activeNavClass="active">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item mx-0 mx-lg-1">
+                <a
+                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                  href="#about"
+                >
+                  About
+                </a>
+              </li>
+              <li className="nav-item mx-0 mx-lg-1">
+                <a
+                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                  href="#skills"
+                >
+                  Skills
+                </a>
+              </li>
+              <li className="nav-item mx-0 mx-lg-1">
+                <a
+                  className="nav-link py-3 px-0 px-lg-3 rounded"
+                  href="#portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li className="nav-item mx-0 mx-lg-1">
+                <a
+                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                  href="#portfolio"
+                >
+                  Blogs
+                </a>
+              </li>
 
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#contact"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
+              <li className="nav-item mx-0 mx-lg-1">
+                <a
+                  className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </ScrollspyNav>
         </div>
       </div>
     </nav>
