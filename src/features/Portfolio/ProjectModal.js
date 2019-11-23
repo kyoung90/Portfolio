@@ -26,9 +26,11 @@ export const ProjectModal = props => {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-lg-8">
-                  <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0">
-                    {props.name}
-                  </h2>
+                  <a href={props.link}>
+                    <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0">
+                      {props.name}
+                    </h2>
+                  </a>
                   <div className="divider-custom">
                     <div className="divider-custom-line"></div>
                     <div className="divider-custom-icon">
@@ -36,11 +38,13 @@ export const ProjectModal = props => {
                     </div>
                     <div className="divider-custom-line"></div>
                   </div>
-                  <img
-                    className="img-fluid rounded mb-5"
-                    src={`./assets/${props.image_name}`}
-                    alt=""
-                  />
+                  <a href={props.link}>
+                    <img
+                      className="img-fluid rounded mb-5"
+                      src={`./assets/${props.image_name}`}
+                      alt=""
+                    />
+                  </a>
                   <p className="mb-5">{props.description}</p>
                   <div className="divider-custom">
                     <div className="divider-custom-icon">
@@ -49,7 +53,11 @@ export const ProjectModal = props => {
                       </a>
                     </div>
                   </div>
-                  <button className="btn btn-primary" href="#" data-dismiss="modal">
+                  <button
+                    className="btn btn-primary"
+                    href="#"
+                    data-dismiss="modal"
+                  >
                     <i className="fa fa-times fa-fw"></i>
                     Close Window
                   </button>
