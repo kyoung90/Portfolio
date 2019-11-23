@@ -20,10 +20,10 @@ export const BlogsContainer = () => {
   };
 
   return (
-    <section class="page-section bg-primary text-white mb-0" id="blogs">
+    <section class="page-section bg-primary text-white mb-0" id="blog">
       <div class="container">
         <h2 class="page-section-heading text-center text-uppercase text-white">
-          Blogs
+          Blog
         </h2>
 
         <div className="divider-custom">
