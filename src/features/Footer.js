@@ -1,6 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMedium, faFacebook, faTwitter, faGithub} from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+
+library.add(fab);
 
 export const Footer = () => {
   return (
@@ -9,37 +12,62 @@ export const Footer = () => {
         <div class="container">
           <div class="row">
             <div class="col-lg-4 mb-5 mb-lg-0">
-              <h4 class="text-uppercase mb-4">Location</h4>
-              <p class="lead mb-0">
-                2215 John Daniel Drive
-                <br />
-                >Clark, MO 65243
-              </p>
+              <a href="/assets/kenneth_resume.pdf" target="_blank">
+                <h4 class="text-uppercase mb-4">Resume</h4>
+              </a>
             </div>
 
             <div class="col-lg-4 mb-5 mb-lg-0">
               <h4 class="text-uppercase mb-4">Around the Web</h4>
-              <a class="btn btn-outline-light btn-social mx-1" href="#">
-              <i class="fab fa-medium"></i>
+              <a
+                href="https://medium.com/@kenneth.young90"
+                target="_blank"
+                class="btn btn-outline-light btn-social mx-1"
+              >
+                <FontAwesomeIcon
+                  style={{ fontSize: "1.4em" }}
+                  icon={["fab", "medium"]}
+                />
               </a>
-              <a class="btn btn-outline-light btn-social mx-1" href="#">
-              <i class="fab fa-linked-in"></i>
+              <a
+                href="https://www.linkedin.com/in/kenneth-young-castro-8a558b138/"
+                target="_blank"
+                class="btn btn-outline-light btn-social mx-1"
+              >
+                <FontAwesomeIcon
+                  style={{ fontSize: "1.4em" }}
+                  icon={["fab", "linkedin"]}
+                />
               </a>
-              <a class="btn btn-outline-light btn-social mx-1" href="#">
-              <i class="fab fa-twitter"></i>
+              <a
+                href="https://twitter.com/KennethYoungCas"
+                target="_blank"
+                class="btn btn-outline-light btn-social mx-1"
+              >
+                <FontAwesomeIcon
+                  style={{ fontSize: "1.4em" }}
+                  icon={["fab", "twitter"]}
+                />
               </a>
-              <a class="btn btn-outline-light btn-social mx-1" href="#">
-              <i class="fab fa-github"></i>
+              <a
+                href="https://github.com/kyoung90"
+                target="_blank"
+                class="btn btn-outline-light btn-social mx-1"
+              >
+                <FontAwesomeIcon
+                  style={{ fontSize: "1.4em" }}
+                  icon={["fab", "github"]}
+                />
               </a>
             </div>
 
             <div class="col-lg-4">
-              <h4 class="text-uppercase mb-4">About Freelancer</h4>
-              <p class="lead mb-0">
-                Freelance is a free to use, MIT licensed Bootstrap theme created
-                by
-                <a href="http://startbootstrap.com">Start Bootstrap</a>.
-              </p>
+              <a
+                href="mailto:kenneth.young90@gmail.com?Subject=Hey%20Kenneth!"
+                target="_top"
+              >
+                <h4 class="text-uppercase mb-4">Contact me</h4>
+              </a>
             </div>
           </div>
         </div>
@@ -47,7 +75,7 @@ export const Footer = () => {
 
       <section class="copyright py-4 text-center text-white">
         <div class="container">
-          <small>Copyright &copy; Your Website 2019</small>
+          <small>Copyright &copy; Kenneth Young Castro 2019</small>
         </div>
       </section>
     </div>

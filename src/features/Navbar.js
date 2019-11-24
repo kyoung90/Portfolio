@@ -24,7 +24,10 @@ const Navbar1 = () => {
           <i className="fas fa-bars"></i>
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ScrollspyNav scrollTargetIds={["portfolio", "blog"]} activeNavClass="active">
+          <ScrollspyNav
+            scrollTargetIds={["portfolio", "blog"]}
+            activeNavClass="active"
+          >
             <ul className="navbar-nav ml-auto">
               <li className="nav-item mx-0 mx-lg-1">
                 <a
@@ -43,20 +46,8 @@ const Navbar1 = () => {
                 </a>
               </li>
               <li className="nav-item mx-0 mx-lg-1">
-                <a
-                  className="nav-link py-3 px-0 px-lg-3 rounded"
-                  href="#blog"
-                >
+                <a className="nav-link py-3 px-0 px-lg-3 rounded" href="#blog">
                   Blog
-                </a>
-              </li>
-
-              <li className="nav-item mx-0 mx-lg-1">
-                <a
-                  className="nav-link py-3 px-0 px-lg-3 rounded"
-                  href="#contact"
-                >
-                  Contact
                 </a>
               </li>
             </ul>
