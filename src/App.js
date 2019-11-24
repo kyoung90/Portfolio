@@ -4,6 +4,7 @@ import { Home } from "./features/Home";
 import "./App.css";
 import { PortfolioContainer } from "./features/Portfolio/PortfolioContainer";
 import { BlogsContainer } from "./features/Blogs/BlogsContainer";
+import { Footer } from "./features/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <PortfolioContainer id="portfolio" />
       <BlogsContainer />
+      <Footer />
     </div>
   );
 }
