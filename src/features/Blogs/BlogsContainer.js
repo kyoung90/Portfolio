@@ -38,6 +38,9 @@ export const BlogsContainer = () => {
         </div>
 
         <div className="card-deck">{generateBlogs()}</div>
+        <p className="text-center">
+          <a href="https://medium.com/@kenneth.young90" target="_blank"className="btn btn-primary btn-lg">More Blogs</a>
+        </p>
       </div>
     </section>
   );

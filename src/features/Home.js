@@ -6,7 +6,7 @@ export const Home = () => {
       <div className="container d-flex align-items-center flex-column">
         <img
           className="masthead-avatar mb-5"
-          src="./assets/avatarPic.png"
+          src="./assets/cartoonImageKenneth.png"
           alt=""
         />
         <h1 className="masthead-heading text-uppercase mb-0">Kenneth Young</h1>

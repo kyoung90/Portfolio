@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import ScrollspyNav from "react-scrollspy-nav";
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
 const Navbar1 = () => {
+  const [shrinkNav, setShrinkNav] = useState("");
+  useScrollPosition(
+    ({ prevPos, currPos }) => {
+      if (currPos.y < -80) {
+        setShrinkNav("navbar-shrink");
+      } else {
+        setShrinkNav("");
+      }
+    },
+    [],
+    false,
+    false,
+    300
+  );
+
   return (
     <nav
-      className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      className={
+        "navbar navbar-expand-lg bg-secondary text-uppercase fixed-top " +
+        shrinkNav
+      }
       id="mainNav"
     >
       <div className="container">
@@ -24,34 +43,39 @@ const Navbar1 = () => {
           <i className="fas fa-bars"></i>
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ScrollspyNav
-            scrollTargetIds={["portfolio", "blog"]}
-            activeNavClass="active"
-          >
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item mx-0 mx-lg-1">
+          <div className="ml-auto">
+            <ScrollspyNav
+              scrollTargetIds={["portfolio", "blog"]}
+              activeNavClass="active"
+            >
+              <ul className="navbar-nav">
+                {/* <li className="nav-item mx-0 mx-lg-1">
                 <a
                   className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                   href="#about"
                 >
                   About
                 </a>
-              </li>
-              <li className="nav-item mx-0 mx-lg-1">
-                <a
-                  className="nav-link py-3 px-0 px-lg-3 rounded"
-                  href="#portfolio"
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li className="nav-item mx-0 mx-lg-1">
-                <a className="nav-link py-3 px-0 px-lg-3 rounded" href="#blog">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </ScrollspyNav>
+              </li> */}
+                <li className="nav-item mx-0 mx-lg-1">
+                  <a
+                    className="nav-link py-3 px-0 px-lg-3 rounded"
+                    href="#portfolio"
+                  >
+                    Portfolio
+                  </a>
+                </li>
+                <li className="nav-item mx-0 mx-lg-1">
+                  <a
+                    className="nav-link py-3 px-0 px-lg-3 rounded"
+                    href="#blog"
+                  >
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </ScrollspyNav>
+          </div>
         </div>
       </div>
     </nav>

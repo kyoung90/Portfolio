@@ -6,7 +6,7 @@ import { faGlasses } from "@fortawesome/free-solid-svg-icons";
 
 export const PortfolioContainer = () => {
   const generateProjects = () => {
-    return projects.map(project => <Project key={project.id} {...project} />);
+    return projects.reverse().map(project => <Project key={project.id} {...project} />);
   };
   return (
     <section className="page-section portfolio" id="portfolio">

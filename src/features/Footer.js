@@ -18,7 +18,7 @@ export const Footer = () => {
             </div>
 
             <div class="col-lg-4 mb-5 mb-lg-0">
-              <h4 class="text-uppercase mb-4">Around the Web</h4>
+              <h4 class="text-uppercase mb-4">Follow Me At:</h4>
               <a
                 href="https://medium.com/@kenneth.young90"
                 target="_blank"
