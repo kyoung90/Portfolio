@@ -23,13 +23,13 @@ export const Blog = props => {
       onClick={() => handleClick(props.link)}
     >
       <img src={props.thumbnail} className="card-img-top" alt="..." />>
-      <div className="card-body">
-        <h5 className="card-title" style={{ color: "black" }}>
-          {props.title}
-        </h5>
-        <p className="card-text">
-          <small className="text-muted">Published on {getDate()}</small>
-        </p>
+      <div className="card-body d-flex flex-column">
+          <h5 className="card-title mt-auto" style={{ color: "black" }}>
+            {props.title}
+          </h5>
+          <p className="card-text">
+            <small className="text-muted">Published on {getDate()}</small>
+          </p>
       </div>
     </div>
     //       </div>
