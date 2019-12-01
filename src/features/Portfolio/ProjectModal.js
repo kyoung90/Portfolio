@@ -48,9 +48,11 @@ export const ProjectModal = props => {
                   <p className="mb-5">{props.description}</p>
                   <div className="divider-custom">
                     <div className="divider-custom-icon">
-                      <a className="bg-custom-dark" href={props.github_link}>
-                        <i className="fa fa-github fa-2x" />
-                      </a>
+                      {props.github_link && (
+                        <a className="bg-custom-dark" href={props.github_link}>
+                          <i className="fa fa-github fa-2x" />
+                        </a>
+                      )}
                     </div>
                   </div>
                   <button
