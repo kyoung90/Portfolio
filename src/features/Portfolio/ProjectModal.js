@@ -1,4 +1,5 @@
 import React from "react";
+import { StackContainer } from "./StackContainer";
 
 export const ProjectModal = props => {
   return (
@@ -45,6 +46,7 @@ export const ProjectModal = props => {
                       alt=""
                     />
                   </a>
+                  <StackContainer stack={props.stack} />
                   <p className="mb-5">{props.description}</p>
                   <div className="divider-custom">
                     <div className="divider-custom-icon">
