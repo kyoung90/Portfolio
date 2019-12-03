@@ -14,13 +14,13 @@ export const projects = [
         </p>
         <br />
         <p>
-          I contributed to building their website with the help of
+          I contributed to building their website with the help of{" "}
           <a
             href="https://www.linkedin.com/in/pjgs-profile/?originalSubdomain=pr"
             target="_blank"
           >
             Pedro Giusti
-          </a>
+          </a>{" "}
           and Gabriela Rivera Mejías.
         </p>
       </div>
@@ -76,13 +76,13 @@ export const projects = [
         <br />
         <p>
           I contributed to building their website with the help of my Flatiron
-          School cohort friends. Visit the
+          School cohort friends. Visit the{" "}
           <a
             href="https://github.com/joanrig/codigo-ecuador-web"
             target="_blank"
           >
             github link
-          </a>
+          </a>{" "}
           for more details.
         </p>
       </div>
