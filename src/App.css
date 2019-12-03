@@ -9881,3 +9881,29 @@ form .row:first-child .floating-label-form-group {
 .technology:hover > figure > .technology-name {
   visibility: visible;
 }
+
+.avatar {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+  background-color: purple !important
+}
+
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:focus {
+ outline: none
+}
+
+.testimonial-block {
+  background-color: white;
+}
+
+.control-dots {
+  padding-left: 0;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  background: gray !important;
+}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ScrollspyNav from "react-scrollspy-nav";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar1 = () => {
   const [shrinkNav, setShrinkNav] = useState("");
@@ -39,13 +41,12 @@ const Navbar1 = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          Menu
-          <i className="fas fa-bars"></i>
+          Menu <FontAwesomeIcon icon={faBars} />
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <div className="ml-auto">
             <ScrollspyNav
-              scrollTargetIds={["portfolio", "blog"]}
+              scrollTargetIds={["portfolio", "blog", "testimonial"]}
               activeNavClass="active"
             >
               <ul className="navbar-nav">
@@ -71,6 +72,14 @@ const Navbar1 = () => {
                     href="#blog"
                   >
                     Blog
+                  </a>
+                </li>
+                <li className="nav-item mx-0 mx-lg-1">
+                  <a
+                    className="nav-link py-3 px-0 px-lg-3 rounded"
+                    href="#testimonial"
+                  >
+                    Testimonials
                   </a>
                 </li>
               </ul>
