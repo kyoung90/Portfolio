@@ -13,11 +13,11 @@ export const Stack = props => {
     >
       <figure>
         <img
-          className="img-fluid rounded"
+          className="img-fluid"
           src={`./assets/logos/${props.tech}.svg`}
           alt=""
         />
-        <figcaption className="technology-name">{props.tech}</figcaption>
+        <figcaption className="technology-name text-capitalize">{props.tech}</figcaption>
       </figure>
     </div>
   );
