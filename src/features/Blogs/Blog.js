@@ -1,4 +1,5 @@
 import React from "react";
+import moment from 'moment'
 
 export const Blog = props => {
   const handleClick = url => {
@@ -7,10 +8,11 @@ export const Blog = props => {
   };
 
   const getDate = () => {
-    let date = new Date(props.pubDate);
-    return (
-      date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear()
-    );
+    let date = moment(props.pubDate).format("MMMM/DD/YYYY")
+    return date
+    // return (
+    //   date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear()
+    // );
   };
   return (
     // <div className="col-md-6 col-lg-4">
