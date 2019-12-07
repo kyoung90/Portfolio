@@ -9970,3 +9970,8 @@ form .row:first-child .floating-label-form-group {
   box-shadow: none !important;
   background: gray !important;
 }
+
+.testimonial-img {
+  border-radius: 50%;
+  max-width: 200px;
+}
