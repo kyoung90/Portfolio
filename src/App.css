@@ -9737,6 +9737,11 @@ a.text-dark:hover, a.text-dark:focus {
   transform: skewY(6deg);
 } */
 
+#about {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
 /* .masthead >* {
   webkit-transform: skewY(6deg);
   -moz-transform: skewY(6deg);
