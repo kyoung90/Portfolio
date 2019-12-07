@@ -15,14 +15,7 @@ export const Footer = () => {
               <a href="/assets/kenneth_resume.pdf" target="_blank">
                 <h4 class="text-uppercase mb-4">Resume</h4>
               </a>
-              <a
-                href="mailto:kenneth.young90@gmail.com?Subject=Hey%20Kenneth!"
-                target="_top"
-              >
-                <h4 class="text-uppercase mb-4">Contact me</h4>
-              </a>
             </div>
-
             <div class="col-lg-4 mb-5 mb-lg-0">
               <h4 class="text-uppercase mb-4">Follow Me At:</h4>
               <a
@@ -64,6 +57,14 @@ export const Footer = () => {
                   style={{ fontSize: "1.4em" }}
                   icon={["fab", "github"]}
                 />
+              </a>
+            </div>
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <a
+                href="mailto:kenneth.young90@gmail.com?Subject=Hey%20Kenneth!"
+                target="_top"
+              >
+                <h4 class="text-uppercase mb-4">Contact me</h4>
               </a>
             </div>
           </div>
