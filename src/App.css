@@ -9740,6 +9740,7 @@ a.text-dark:hover, a.text-dark:focus {
 #about {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  height: 55rem;
 }
 
 /* .masthead >* {
@@ -9979,4 +9980,27 @@ form .row:first-child .floating-label-form-group {
 .testimonial-img {
   border-radius: 50%;
   max-width: 200px;
+}
+
+.anchor-purple {
+  color: #6f42c1;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.anchor-purple:hover{
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.heavy-text {
+  font-weight: 550;
+}
+
+.anchor-resume {
+  transition: transform 0.5s ease;
+}
+
+.anchor-resume:hover {
+    transform: scale(1.1);
 }
