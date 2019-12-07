@@ -6270,7 +6270,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #e0e0e0 !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -9720,6 +9720,22 @@ a.text-dark:hover, a.text-dark:focus {
   -o-transform: skewY(-6deg);
   transform: skewY(-6deg);
 }
+
+/* #about {
+  webkit-transform: skewY(-6deg);
+  -moz-transform: skewY(-6deg);
+  -ms-transform: skewY(-6deg);
+  -o-transform: skewY(-6deg);
+  transform: skewY(-6deg);
+}
+
+#about >*{
+  webkit-transform: skewY(6deg);
+  -moz-transform: skewY(6deg);
+  -ms-transform: skewY(6deg);
+  -o-transform: skewY(6deg);
+  transform: skewY(6deg);
+} */
 
 /* .masthead >* {
   webkit-transform: skewY(6deg);
