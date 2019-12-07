@@ -44,6 +44,7 @@ export const TestimonialContainer = () => {
           onChange={onChange}
           emulateTouch
           useKeyboardArrows
+          infiniteLoop
         >
           {generateTestimonials()}
         </Carousel>
