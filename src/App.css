@@ -9740,7 +9740,7 @@ a.text-dark:hover, a.text-dark:focus {
 #about {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  height: 55rem;
+  padding-bottom: 20rem !important;
 }
 
 /* .masthead >* {
