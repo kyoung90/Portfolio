@@ -3980,6 +3980,10 @@ input[type="button"].btn-block {
   white-space: nowrap;
 }
 
+.navbar-brand:hover {
+  cursor: pointer;
+}
+
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
