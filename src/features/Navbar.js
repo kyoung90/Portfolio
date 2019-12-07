@@ -3,9 +3,11 @@ import ScrollspyNav from "react-scrollspy-nav";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import {scrollToTop} from "../common/layout/scrollToTop"
 
 const Navbar1 = () => {
   const [shrinkNav, setShrinkNav] = useState("");
+
   useScrollPosition(
     ({ prevPos, currPos }) => {
       if (currPos.y < -80) {
@@ -20,6 +22,18 @@ const Navbar1 = () => {
     300
   );
 
+  const scrollToTop = () => {
+    try {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+    } catch (error) {
+      window.scrollTo(0, 0);
+    }
+  }
+
   return (
     <nav
       className={
@@ -29,7 +43,7 @@ const Navbar1 = () => {
       id="mainNav"
     >
       <div className="container">
-        <a className="navbar-brand" href="#page-top">
+        <a className="navbar-brand" onClick={() => scrollToTop()}>
           Kenneth Young
         </a>
         <button
