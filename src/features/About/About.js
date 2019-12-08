@@ -13,46 +13,55 @@ export const About = () => {
         <div className="divider-custom">
           <div className="divider-custom-line"></div>
           <div className="divider-custom-icon">
-          • • •
-            {/* <FontAwesomeIcon icon={faGlasses} /> */}
+            • • •{/* <FontAwesomeIcon icon={faGlasses} /> */}
           </div>
           <div className="divider-custom-line"></div>
         </div>
 
         <div className="container pt-2">
           <div className="row d-flex justify-content-around">
-            <div className="col-md-6 col-sm-8 d-flex flex-column align-items-center align-self-center">
-              <h3 className="text-secondary">
-                Get My Resume!
-              </h3>
+            <div className="col-md-6 col-sm-8 mb-5 d-flex flex-column align-items-center align-self-center">
+              <h3 className="text-secondary">🠛Resume🠛</h3>
               <br/>
-              <a className="anchor-resume" href="/assets/kenneth_resume.pdf" target="_blank">
+              <a
+                className="anchor-resume"
+                href="/assets/kenneth_resume.pdf"
+                target="_blank"
+              >
                 <img
                   style={{ height: "250px", width: "250px" }}
                   src="/assets/resume-icon.svg"
                 />
               </a>
             </div>
-            <div className="col-md-6 col-sm-8">
+            <div className="col-md-6 col-sm-8 mb-5">
               <h3 className="text-secondary">
                 Hi, I'm Kenneth. Nice to meet you.
               </h3>
               <br />
               <p className="text-secondary heavy-text">
-                I began my coding journey when I was a senior in High School. I
-                started as a tutor in university and have teached code to High
-                School teachers and students both remotely and in the classroom.{" "}
+                I create websites and teach others how to code. I've taught
+                students of a wide variety of ages in school and university.
+                I've even mentored High School students in their science fair
+                project that went on to win special awards in the Intel ISEF
+                2019.
               </p>
               <br />
               <p className="text-secondary heavy-text">
-                I enjoy contributing to open source organizations and writing
-                tech blogs on Medium.{" "}
-              </p>
-              <br />
-              <p className="text-secondary heavy-text">
-                Take a look at what I'm working on recently on my{" "}
+                I've recently picked up writing tech blogs as well! My goal with
+                it is to explain abstract concepts more visually with GIFs and
+                images. Take a{" "}
                 <a className="anchor-purple" href="https://github.com/kyoung90">
-                  github
+                  Look
+                </a>
+                !
+              </p>
+              <br />
+              <p className="text-secondary heavy-text">
+                I'm also working on some cool web applications, including
+                open-source ones. Check them out at my{" "}
+                <a className="anchor-purple" href="https://github.com/kyoung90">
+                  GitHub
                 </a>
                 .
               </p>
