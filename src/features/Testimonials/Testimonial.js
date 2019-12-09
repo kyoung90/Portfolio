@@ -10,7 +10,7 @@ export const Testimonial = props => {
       <div className="container">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 col-md-8 col-sm-12">
-            <h5 className="quote" style={{ fontWeight:"normal" }}>{props.text}</h5>
+            <h5 className="quote" style={{ fontWeight:"normal" }}>{"“" + props.text + "”"}</h5>
             <br />
             <h4>{props.name}</h4>
             <h6 style={{ fontWeight:"normal" }}>{props.title}</h6>
