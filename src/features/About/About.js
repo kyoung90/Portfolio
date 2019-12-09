@@ -42,7 +42,7 @@ export const About = () => {
               <p className="text-secondary heavy-text">
                 I create websites and teach others how to code. I've taught
                 students of a wide variety of ages in school and university.
-                I've even mentored High School students in their science fair
+                I've even mentored high school students in their science fair
                 project that went on to win special awards in the Intel ISEF
                 2019.
               </p>
@@ -51,8 +51,8 @@ export const About = () => {
                 I've recently picked up writing tech blogs as well! My goal with
                 it is to explain abstract concepts more visually with GIFs and
                 images. Take a{" "}
-                <a className="anchor-purple" href="https://github.com/kyoung90">
-                  Look
+                <a className="anchor-purple" href="https://medium.com/@kenneth.young90">
+                  look
                 </a>
                 !
               </p>
