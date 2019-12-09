@@ -10012,3 +10012,13 @@ form .row:first-child .floating-label-form-group {
 .anchor-resume:hover {
     transform: scale(1.1);
 }
+
+.portfolio-img {
+  transition: transform 0.2s ease;
+}
+
+.portfolio-img:hover {
+  -webkit-filter: grayscale(75%);
+  filter: grayscale(75%);
+}
+

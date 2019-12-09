@@ -41,7 +41,7 @@ export const ProjectModal = props => {
                   </div>
                   <a href={props.link}>
                     <img
-                      className="img-fluid rounded mb-5"
+                      className="img-fluid rounded mb-5 portfolio-img"
                       src={`./assets/${props.image_name}`}
                       alt=""
                     />
