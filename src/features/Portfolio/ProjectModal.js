@@ -48,23 +48,35 @@ export const ProjectModal = props => {
                   </a>
                   <StackContainer stack={props.stack} />
                   <p className="mb-5">{props.description}</p>
-                  <div className="divider-custom">
-                    <div className="divider-custom-icon">
-                      {props.github_link && (
-                        <a className="bg-custom-dark" href={props.github_link}>
-                          <i className="fa fa-github fa-2x" />
-                        </a>
-                      )}
-                    </div>
+
+                  <div className="d-flex justify-content-around">
+                    <button
+                      className="btn btn-primary"
+                      href="#"
+                      data-dismiss="modal"
+                    >
+                      <i className="fa fa-times fa-fw"></i>
+                      Close
+                    </button>
+                    {props.github_link && (
+                      <button
+                        className="btn btn-primary"
+                        href={props.github_link}
+                        data-dismiss="modal"
+                      >
+                        <i className="fa fa-github fa-lg" ariaHidden={true}></i>{" "}
+                        GitHub
+                      </button>
+                    )}
+                    <button
+                      className="btn btn-primary"
+                      href={props.link}
+                      data-dismiss="modal"
+                    >
+                      <i className="fa fa-arrow-right" ariaHidden={true}></i>{" "}
+                      Live
+                    </button>
                   </div>
-                  <button
-                    className="btn btn-primary"
-                    href="#"
-                    data-dismiss="modal"
-                  >
-                    <i className="fa fa-times fa-fw"></i>
-                    Close Window
-                  </button>
                 </div>
               </div>
             </div>
