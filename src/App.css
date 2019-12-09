@@ -9972,6 +9972,10 @@ form .row:first-child .floating-label-form-group {
   background-color: white;
 }
 
+.carousel .slide {
+  background: white !important;
+}
+
 .control-dots {
   padding-left: 0;
 }
