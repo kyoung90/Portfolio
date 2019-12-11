@@ -7,6 +7,7 @@ import { BlogsContainer } from "./features/Blogs/BlogsContainer";
 import { Footer } from "./features/Footer";
 import { TestimonialContainer } from "./features/Testimonials/TestimonialContainer";
 import { About } from "./features/About/About";
+import { Contact } from "./features/Contact/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <PortfolioContainer id="portfolio" />
       <BlogsContainer />
       <TestimonialContainer />
+      <Contact />
       <Footer />
     </div>
   );

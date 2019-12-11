@@ -60,7 +60,7 @@ const Navbar1 = () => {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <div className="ml-auto">
             <ScrollspyNav
-              scrollTargetIds={["about", "portfolio", "blog", "testimonial"]}
+              scrollTargetIds={["about", "portfolio", "blog", "testimonial", "contact"]}
               activeNavClass="active"
             >
               <ul className="navbar-nav">
@@ -94,6 +94,14 @@ const Navbar1 = () => {
                     href="#testimonial"
                   >
                     Testimonials
+                  </a>
+                </li>
+                <li className="nav-item mx-0 mx-lg-1">
+                  <a
+                    className="nav-link py-3 px-0 px-lg-3 rounded"
+                    href="#contact"
+                  >
+                    Contact
                   </a>
                 </li>
               </ul>
