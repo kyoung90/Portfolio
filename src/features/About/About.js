@@ -51,7 +51,7 @@ export const About = () => {
                 I've recently picked up writing tech blogs as well! My goal with
                 it is to explain abstract concepts more visually with GIFs and
                 images. Take a{" "}
-                <a className="anchor-purple" href="https://medium.com/@kenneth.young90">
+                <a className="anchor-purple" target="_blank" href="https://medium.com/@kenneth.young90">
                   look
                 </a>
                 !
@@ -60,7 +60,7 @@ export const About = () => {
               <p className="text-secondary heavy-text">
                 I'm also working on some cool web applications, including
                 open-source ones. Check them out at my{" "}
-                <a className="anchor-purple" href="https://github.com/kyoung90">
+                <a className="anchor-purple" target="_blank" href="https://github.com/kyoung90">
                   GitHub
                 </a>
                 .
