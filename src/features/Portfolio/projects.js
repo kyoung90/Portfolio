@@ -27,7 +27,7 @@ export const projects = [
     ),
     // image_name: "hackturabo.png",
     image_name: "imagesForKYoungPage_HackTurabo.png",
-    link: "https://codigo-ec.firebaseapp.com/",
+    link: "https://hackturabo.com/home",
     stack: ["nodejs", "express", "mongodb"]
   },
   {
