@@ -90,7 +90,7 @@ export const projects = [
     // image_name: "codigoEcuador.png",
     image_name: "imagesForKYoungPage_Codigo Ecuador.png",
     github_link: "https://github.com/joanrig/codigo-ecuador-web",
-    link: "https://codigo-ec.firebaseapp.com/",
+    link: "https://codigo-ecuador.firebaseapp.com/",
     stack: ["react", "redux"]
   }
 ];
