@@ -61,8 +61,7 @@ export const ProjectModal = props => {
                     {props.github_link && (
                       <button
                         className="btn btn-primary"
-                        href={props.github_link}
-                        data-dismiss="modal"
+                        onClick={() => window.open(props.github_link, "_blank")}
                       >
                         <i className="fa fa-github fa-lg" ariaHidden={true}></i>{" "}
                         GitHub
@@ -70,8 +69,7 @@ export const ProjectModal = props => {
                     )}
                     <button
                       className="btn btn-primary"
-                      href={props.link}
-                      data-dismiss="modal"
+                      onClick={() => window.open(props.link, "_blank")}
                     >
                       <i className="fa fa-arrow-right" ariaHidden={true}></i>{" "}
                       Live
