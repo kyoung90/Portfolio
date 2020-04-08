@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Stack } from "./Stack";
 
-export const StackContainer = props => {
-  const [hover, setHover] = useState(false)
+export const StackContainer = (props) => {
+  const [hover, setHover] = useState(false);
 
   const generateStackIcons = () => {
-    return props.stack.map(tech => <Stack tech={tech} setHover={setHover} hover={hover}/>);
+    return props.stack.map((tech, index) => (
+      <Stack key={index} tech={tech} setHover={setHover} hover={hover} />
+    ));
   };
-
-
 
   return (
     <div>

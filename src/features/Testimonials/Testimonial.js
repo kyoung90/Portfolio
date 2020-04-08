@@ -8,8 +8,8 @@ export const Testimonial = props => {
       <br />
      
       <div className="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-6 col-md-8 col-sm-12">
+        <div className="row d-flex justify-content-center">
+          <div className="col-lg-6 col-md-8 col-sm-12">
             <h5 className="quote" style={{ fontWeight:"normal" }}>{"“" + props.text + "”"}</h5>
             <br />
             <h4>{props.name}</h4>

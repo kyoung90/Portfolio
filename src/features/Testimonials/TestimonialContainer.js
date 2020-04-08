@@ -17,7 +17,7 @@ export const TestimonialContainer = () => {
   };
 
   const generateTestimonials = () => {
-    return testimonials.map(testimonial => <Testimonial {...testimonial} />);
+    return testimonials.map(testimonial => <Testimonial key={testimonial.id} {...testimonial} />);
   };
   return (
     <section className="page-section testimonial" id="testimonial">

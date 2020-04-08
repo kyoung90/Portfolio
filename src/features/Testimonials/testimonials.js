@@ -2,6 +2,7 @@ import React from "react";
 
 export const testimonials = [
   {
+    id: 1,
     name: "Joan Indiana",
     title: "Software Engineer at Vistaprint",
     text:
@@ -9,6 +10,7 @@ export const testimonials = [
     image: "/assets/testimonialPictures/JoanIndianaPicture.jfif",
   },
   {
+    id: 2,
     name: "Burak Kocak",
     title: "Junior Software Developer at Young Consulting",
     text:
@@ -16,6 +18,7 @@ export const testimonials = [
     image: "/assets/testimonialPictures/BurakKocakPicture.jfif",
   },
   {
+    id: 3,
     name: "Dany Villafuerte",
     title: "Principal at Truenorth Corporation",
     text:

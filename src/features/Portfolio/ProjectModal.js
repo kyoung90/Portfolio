@@ -47,7 +47,7 @@ export const ProjectModal = props => {
                     />
                   </a>
                   <StackContainer stack={props.stack} />
-                  <p className="mb-5">{props.description}</p>
+                  {props.description}
 
                   <div className="d-flex justify-content-around">
                     <button
@@ -63,7 +63,7 @@ export const ProjectModal = props => {
                         className="btn btn-primary"
                         onClick={() => window.open(props.github_link, "_blank")}
                       >
-                        <i className="fa fa-github fa-lg" ariaHidden={true}></i>{" "}
+                        <i className="fa fa-github fa-lg" aria-hidden={true}></i>{" "}
                         GitHub
                       </button>
                     )}
@@ -71,7 +71,7 @@ export const ProjectModal = props => {
                       className="btn btn-primary"
                       onClick={() => window.open(props.link, "_blank")}
                     >
-                      <i className="fa fa-arrow-right" ariaHidden={true}></i>{" "}
+                      <i className="fa fa-arrow-right" aria-hidden={true}></i>{" "}
                       Live
                     </button>
                   </div>

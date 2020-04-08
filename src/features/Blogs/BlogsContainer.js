@@ -9,17 +9,16 @@ export const BlogsContainer = () => {
     fetch(
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@kenneth.young90"
     )
-      .then(resp => resp.json())
-      .then(blogData => {
-        console.log(blogData["items"]);
+      .then((resp) => resp.json())
+      .then((blogData) => {
         setBlogs(
-          blogData["items"].filter(blog => blog.thumbnail.endsWith(".png"))
+          blogData["items"].filter((blog) => blog.thumbnail.endsWith(".png"))
         );
       });
   }, []);
 
   const generateBlogs = () => {
-    return blogs.map(blog => <Blog key={blog.guid} {...blog} />);
+    return blogs.map((blog) => <Blog key={blog.guid} {...blog} />);
   };
 
   return (
@@ -39,7 +38,13 @@ export const BlogsContainer = () => {
 
         <div className="card-deck">{generateBlogs()}</div>
         <p className="text-center">
-          <a href="https://medium.com/@kenneth.young90" target="_blank"className="btn btn-primary btn-lg">More Blogs</a>
+          <a
+            href="https://medium.com/@kenneth.young90"
+            target="_blank"
+            className="btn btn-primary btn-lg"
+          >
+            More Blogs
+          </a>
         </p>
       </div>
     </section>
